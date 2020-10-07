@@ -11,7 +11,3 @@
 ###### Toggle Between Themes
 
 ![Schema Screenshot](public/theme-shadow.png)
-
-### Author
-
-[Eric Clemmons (@ericclemmons)](https://twitter.com/ericclemmons)
