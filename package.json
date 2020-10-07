@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "customized-graphiql",
+  "description": "Customizing GraphiQL for Fun & Productivity",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build src/client",
+    "deploy": "now",
+    "dev": "nodemon --require esm src/server",
+    "release": "CI=true np --yolo",
+    "postrelease": "$_ run deploy",
+    "start": "node --require esm src/server"
+  },
+  "dependencies": {
+    "esm": "^3.0.82",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphiql": "^0.11.11",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
+    "lodash": "^4.17.11",
+    "next": "^6.1.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "now": "^11.4.4",
+    "np": "^3.0.4"
+  }
+}
